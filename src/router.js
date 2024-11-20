@@ -74,7 +74,11 @@ const routes = [
       },
     ],
   },
-
+  {
+    path: "/tienda", //el productName es un parametro dinamico que acepta cualquier cosa
+    name: "Tienda",
+    component: () => import("./components/MyTienda.vue"),
+  },
   // 404
   {
     path: "/:pathMatch(.*)*",
